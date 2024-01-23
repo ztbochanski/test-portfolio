@@ -2,7 +2,7 @@
 
 ## A personal portfolio site made using `Astro`.
 
-View my portfolio, **[click here](https://sparkly-speculoos-0c9197.netlify.app/)**
+View my portfolio, **[click here](https://<change>.netlify.app/)**
 
 ## Features
 
@@ -28,13 +28,13 @@ git clone https://github.com/Ladvace/my-portfolio
 ```
 
 ```bash
-$ cd my-portfolio
+cd my-portfolio
 ```
 
 ```bash
-$ npm install
+npm install
 ```
 
 ```bash
-$ pnpm run dev
+pnpm run dev
 ```
