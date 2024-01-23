@@ -1,13 +1,23 @@
 ---
 import Card from "./Card/index.astro";
 import { LINKS } from "../lib/constants";
+import Pulse from "./Pulse.astro";
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
   <div class="h-full">
-    <header class="flex items-center">
-      <h1 class="text-white text-xl font-bold">Contact</h1>
-    </header>
+    <div class="relative">
+      <div class="absolute left-20 mt-2">
+        <div class="flex items-end justify-end">
+          <Pulse />
+        </div>
+      </div>
+      <!-- Other content goes here, adjust the margin-top (mt-3) value as needed -->
+      <header class="flex items-center">
+        <h1 class="text-white text-xl font-bold">Contact</h1>
+      </header>
+    </div>
+
     <div class="flex flex-col mt-4 w-fit">
       <h2 class="text-gray-500">Socials</h2>
       <ul>
