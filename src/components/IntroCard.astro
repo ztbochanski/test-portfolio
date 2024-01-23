@@ -32,6 +32,12 @@ import Tooltip from "./Tooltip/index";
             <span class="sr-only">Linkedin Profile</span>
           </Button>
         </a>
+        <a href={LINKS.discord} aria-label="discord" target="_blank">
+          <Button aria-label="discord">
+            <Icon name="ri:discord-fill" class="h-6" />
+            <span class="sr-only">Discord</span>
+          </Button>
+        </a>
         <Tooltip client:visible>
           <Button aria-label="easter egg btn">
             <Icon name="ri:emotion-laugh-line" class="h-6" />
@@ -44,7 +50,7 @@ import Tooltip from "./Tooltip/index";
       width="300"
       height="300"
       src="/avatar-frame-close.png"
-      class="w-auto max-h-[300px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none"
+      class="w-auto max-h-[300px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-85 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none"
       alt="avatar of zach"
     />
   </div>
