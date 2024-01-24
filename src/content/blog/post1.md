@@ -4,38 +4,23 @@ title: "Assignment"
 description: "A statement that is the primary mechanism to change the values of variables in memory"
 pubDate: 2022-12-05
 category: "programming-languages"
+source:
+  title: "Wikipedia"
+  url: "https://en.wikipedia.org/wiki/Assignment_(computer_science)"
+tags: ["programming-languages", "assignment", "assignment-operator", "assignment-expression", "conditional-assignment", "compound-assignment", "chained-assignment", "parallel-assignment"]
 ---
-
-# Assignment
 
 An imperative language consists of a sequential series of changes to the program state. The [assignment](<https://en.wikipedia.org/wiki/Assignment_(computer_science)>) statement is the primary mechanism to change the values of variables in memory.
 
-```ruby
-def main
-  x = 1
-  y = 2
-  z = x + y
-end
-```
-
-`inline code block`
-
-<!-- ## Assignment operators
+here is an emoji 😁
+## Assignment operators
 
 Examples of assignment operators (language dependent):
 
-- `=` is the assignment operator. It assigns the value of its right operand to its left operand. The result of the assignment is the value assigned.
-- 
-- `+=` is the addition assignment operator. It adds the value of its right operand to its left operand and assigns the result to its left operand.
-- `-=` is the subtraction assignment operator. It subtracts the value of its right operand from its left operand and assigns the result to its left operand.
-- `*=` is the multiplication assignment operator. It multiplies the value of its right operand by its left operand and assigns the result to its left operand.
-- `/=` is the division assignment operator. It divides the value of its left operand by its right operand and assigns the result to its left operand.
-- `%=` is the remainder assignment operator. It divides the value of its left operand by its right operand and assigns the remainder of the division to its left operand.
-- `<<=` is the left shift assignment operator. It shifts the value of its left operand by the number of bits specified by its right operand and assigns the result to its left operand.
-- `>>=` is the right shift assignment operator. It shifts the value of its left operand by the number of bits specified by its right operand and assigns the result to its left operand.
-- `&=` is the bitwise AND assignment operator. It performs a bitwise AND operation on the value of its left operand and the value of its right operand and assigns the result to its left operand.
-- `^=` is the bitwise XOR assignment operator. It performs a bitwise XOR operation on the value of its left operand and the value of its right operand and assigns the result to its left operand.
-- `|=` is the bitwise OR assignment operator. It performs a bitwise OR operation on the value of its left operand and the value of its right operand and assigns the result to its left operand.
+- `=` is the assignment operator. 
+>^It assigns the value of its right operand to its left operand. The result of the assignment is the value assigned.
+
+[more examples of assignment operators](#more-examples-of-assignment-operators)
 
 ## Assignment expressions
 
@@ -82,4 +67,27 @@ Parallel assignment is an assignment that assigns multiple values to multiple va
 
 Examples of parallel assignment (language dependent):
 
-- `a, b = c, d` assigns the value of `c` to `a` and the value of `d` to `b`. -->
+- `a, b = c, d` assigns the value of `c` to `a` and the value of `d` to `b`.
+
+## More examples of assignment operators
+
+- `+=` is the addition assignment operator. 
+>^It adds the value of its right operand to its left operand and assigns the result to its left operand.
+- `-=` is the subtraction assignment operator. 
+>^It subtracts the value of its right operand from its left operand and assigns the result to its left operand.
+- `*=` is the multiplication assignment operator. 
+>^It multiplies the value of its right operand by its left operand and assigns the result to its left operand.
+- `/=` is the division assignment operator. 
+>^It divides the value of its left operand by its right operand and assigns the result to its left operand.
+- `%=` is the remainder assignment operator. 
+>^It divides the value of its left operand by its right operand and assigns the remainder of the division to its left operand.
+- `<<=` is the left shift assignment operator. 
+>^It shifts the value of its left operand by the number of bits specified by its right operand and assigns the result to its left operand.
+- `>>=` is the right shift assignment operator. 
+>^It shifts the value of its left operand by the number of bits specified by its right operand and assigns the result to its left operand.
+- `&=` is the bitwise AND assignment operator. 
+>^It performs a bitwise AND operation on the value of its left operand and the value of its right operand and assigns the result to its left operand.
+- `^=` is the bitwise XOR assignment operator. 
+>^It performs a bitwise XOR operation on the value of its left operand and the value of its right operand and assigns the result to its left operand.
+- `|=` is the bitwise OR assignment operator. 
+>^It performs a bitwise OR operation on the value of its left operand and the value of its right operand and assigns the result to its left operand.

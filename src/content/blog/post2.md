@@ -1,9 +1,13 @@
 ---
 layout: ../../layouts/LayoutBlogPost.astro
-title: "Hello, World"
-description: "this is a post example"
-pubDate: 2023-01-21
-category: "intro"
+title: "Something else"
+description: "variables in memory"
+pubDate: 2022-12-08
+category: "programming-languages"
+source:
+  title: "Wikipedia"
+  url: "https://en.wikipedia.org/wiki/Assignment_(computer_science)"
+tags: [ "assignment-operator", "assignment-expression", "conditional-assignment", "compound-assignment", "chained-assignment", "parallel-assignment"]
 ---
 
 # Hi there!

@@ -38,7 +38,7 @@ export default defineConfig({
         200: "#262626",
         300: "#202020",
         400: "#1A1A1A",
-        500: "#171717" /* Exactly your example for the background */,
+        500: "#171717" /* background */,
         600: "#141414",
         700: "#111111",
         800: "#0E0E0E",
@@ -49,7 +49,7 @@ export default defineConfig({
         200: "#F3A3AA",
         300: "#EC7981",
         400: "#E64F59",
-        500: "#409CE3",
+        500: "#409CE3", /* primary */
         600: "#CF2F3D",
         700: "#B82534",
         800: "#A01B2B",
@@ -66,6 +66,12 @@ export default defineConfig({
         serif: "Zodiak",
       },
     }),
-    presetTypography(),
+    presetTypography({
+      cssExtend: {
+        'code': {
+          color: '#409CE3'
+        },
+      }
+    }),
   ],
 });

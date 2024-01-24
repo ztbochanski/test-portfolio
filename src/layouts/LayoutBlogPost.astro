@@ -1,20 +1,23 @@
 ---
-import { formatDate } from "../lib/helpers";
 import type { MarkdownLayoutProps } from "astro";
-import BasicLayout from "./BasicLayout.astro";
+import BaseLayout from "./BaseLayout.astro";
 
 type Props = MarkdownLayoutProps<{
   title: string;
   description: string;
-  pubDate: string;
   minutesRead: string;
   category: string;
+  source: {
+    title: string;
+    url: string;
+  };
+  tags: string[];
 }>;
 
 const { frontmatter } = Astro.props;
 ---
 
-<BasicLayout
+<BaseLayout
   title="Zach - Blog"
   description="Software engineer, creator, athlete, and lifelong student."
 >
@@ -25,15 +28,39 @@ const { frontmatter } = Astro.props;
       >Back</a
     >
     <div class="my-10">
-      <h1 class="text-5xl font-semibold">{frontmatter.title}</h1>
-      <h2 class="text-2xl font-semibold">{frontmatter.category}</h2>
-      <div class="flex justify-between pt-4 text-gray-500 text-sm">
-        <p>{formatDate(new Date(frontmatter.pubDate))}</p>
-        <p>{frontmatter.minutesRead}</p>
+      <h1 class="unreset text-5xl font-semibold">{frontmatter.title}</h1>
+      <p class="unreset text-2xl text-gray-500">{frontmatter.description}</p>
+
+      <div title="tags" class="un-reset">
+        <ul class="un-reset list-none">
+          {
+            frontmatter.tags.map((tag) => (
+              <li class="un-reset inline-block px-2 py-1 mx-1 mb-2 rounded">
+                <a
+                  href={`/tags/${tag}`}
+                  class="bg-gray-800 text-white hover:bg-gray-700 transition duration-300 rounded px-2 py-1"
+                >
+                  {tag}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div title="source">
+        <div class="flex justify-between pt-4 text-gray-500 text-sm">
+          <a href={frontmatter.source.url}>Source: {frontmatter.source.title}</a
+          >
+          <p>{frontmatter.minutesRead}</p>
+        </div>
+      </div>
+
+      <article class="prose prose-neutral prose-invert xl:text-xl">
+        <slot />
+      </article>
+      <div class="flex mb-2 pb-6">
+        <a href="" target="_blank"> Source</a>
       </div>
     </div>
-    <article class="prose prose-p:text-red-500 prose-slate prose-invert">
-      <slot />
-    </article>
   </main>
-</BasicLayout>
+</BaseLayout>
