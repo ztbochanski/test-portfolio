@@ -24,6 +24,9 @@ export default defineConfig({
     icon()
   ],
   markdown: {
+    shikiConfig: {
+      theme: "nord",
+    },
     remarkPlugins: [remarkReadingTime],
   },
   output: "server",

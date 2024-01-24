@@ -1,5 +1,5 @@
 // uno.config.ts
-import { defineConfig, presetUno, presetWebFonts } from "unocss";
+import { defineConfig, presetUno, presetWebFonts, presetTypography } from "unocss";
 
 export default defineConfig({
   content: {
@@ -66,5 +66,6 @@ export default defineConfig({
         serif: "Zodiak",
       },
     }),
+    presetTypography(),
   ],
 });
